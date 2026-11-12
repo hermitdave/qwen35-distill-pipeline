@@ -1,0 +1,21 @@
+model: /Users/hermit.dave/llm-models/Qwen3.5-2B-MLX-8bit
+data: /Users/hermit.dave/Projects/ml/distill-qwen35-pilot/data/full_filtered
+train: true
+fine_tune_type: lora
+mask_prompt: true
+num_layers: 16
+batch_size: 2
+grad_accumulation_steps: 2
+iters: 5600
+learning_rate: 0.00001
+optimizer: adam
+lora_parameters:
+  rank: 16
+  dropout: 0.0
+  scale: 16.0
+max_seq_length: 512
+steps_per_eval: 100
+steps_per_report: 50
+save_every: 50
+adapter_path: /Users/hermit.dave/Projects/ml/distill-qwen35-pilot/work/2b_full_filtered
+seed: 0

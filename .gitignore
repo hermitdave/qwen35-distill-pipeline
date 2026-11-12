@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# MLX / training artifacts
+*.safetensors
+*.npz
+adapters/
+work/
+*.log
+
+# Data
+data/
+
+# macOS
+.DS_Store
